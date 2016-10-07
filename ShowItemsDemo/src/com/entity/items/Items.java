@@ -9,6 +9,19 @@ public class Items {
 	private int number;// ø‚¥Ê
 	private String picture;// ø‚¥ÊÕº∆¨
 
+	public Items() {
+	}
+
+	public Items(int id, String name, String city, int price, int number,
+			String picture) {
+		this.id = id;
+		this.name = name;
+		this.city = city;
+		this.price = price;
+		this.number = number;
+		this.picture = picture;
+	}
+
 	public int getId() {
 		return id;
 	}
@@ -56,4 +69,33 @@ public class Items {
 	public void setCity(String city) {
 		this.city = city;
 	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj instanceof Items) {
+			Items it = (Items) obj;
+			if (this.getId() == it.getId()) {
+				return true;
+			} else {
+				return true;
+			}
+
+		} else {
+			return false;
+		}
+	}
+
+	@Override
+	public int hashCode() {
+		return this.id + this.getName().hashCode();
+	}
+
+	@Override
+	public String toString() {
+		return "…Ã∆∑√˚≥∆:" + this.getName() + ",…Ã∆∑±‡∫≈:" + this.getId();
+	}
+
 }
