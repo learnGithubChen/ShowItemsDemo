@@ -12,7 +12,7 @@ public class DBHelper {
 	private static String username = "root";
 	private static String password = "mysql123";
 	private static Connection conn = null;
-	// ¾²Ì¬¿é¼ÓÔØÇý¶¯
+	 // ¾²Ì¬¿é¼ÓÔØÇý¶¯
 	static {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
