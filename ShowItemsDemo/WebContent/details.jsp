@@ -22,11 +22,11 @@ div dd {
 	font-size: 10pt;
 }
 
- dd.dd_name {
+dd.dd_name {
 	color: blue;
 }
 
- dd.dd_city {
+dd.dd_city {
 	color: #000;
 }
 </style>
@@ -70,7 +70,15 @@ div dd {
 							<b><%=item.getName()%></b>
 						</dd>
 						<dd class="dd_city">
-							产地:<%=item.getCity()%>&nbsp;&nbsp;价格:<%=item.getPrice()%>￥</dd>
+							产地:<%=item.getCity()%>&nbsp;&nbsp;价格:<%=item.getPrice()%>￥
+						</dd>
+						<dt>
+							<a href="servlet/CartServlet" style="list-style-type: none"><img src="images/buy_now.png"
+								width="80" height="30"></a> <a href="servlet/CartServlet"><img
+								src="images/in_cart.png" width="80" height="30"></a> <a
+								href="servlet/CartServlet"><img src="images/view_cart.jpg"
+								width="80" height="30"></a>
+						</dt>
 					</dl>
 				</td>
 				<!-- 浏览过的商品 -->
